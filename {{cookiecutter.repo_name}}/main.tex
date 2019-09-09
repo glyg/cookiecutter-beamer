@@ -30,18 +30,18 @@
 \definecolor{mycompany_red}{RGB}{217,31,20}
 \definecolor{mycompany_blue}{RGB}{4,118,176}
 
-\newenvironment{changemargin}[2]{% 
-  \begin{list}{}{% 
-      \setlength{\topsep}{0pt}% 
-      \setlength{\leftmargin}{#1}% 
-      \setlength{\rightmargin}{#2}% 
-      \setlength{\listparindent}{\parindent}% 
-      \setlength{\itemindent}{\parindent}% 
-      \setlength{\parsep}{\parskip}% 
-    }% 
+\newenvironment{changemargin}[2]{%
+  \begin{list}{}{%
+      \setlength{\topsep}{0pt}%
+      \setlength{\leftmargin}{#1}%
+      \setlength{\rightmargin}{#2}%
+      \setlength{\listparindent}{\parindent}%
+      \setlength{\itemindent}{\parindent}%
+      \setlength{\parsep}{\parskip}%
+    }%
   \item[]}
-{\end{list}} 
- 
+{\end{list}}
+
 \lstset{ %
   basicstyle=\tiny,
   framexleftmargin=3mm,
@@ -85,11 +85,11 @@ morekeywords={xmlns,version,type}
 \usepackage{animate}
 
 \setbeamertemplate{navigation symbols}{}
-\pgfdeclareimage[height=0.45cm]{logos/mycompany-logo.png}{logos/mycompany-logo.png}
-\logo{\pgfuseimage{logos/mycompany-logo.png}}
-\setbeamertemplate{items}[ball] 
-\setbeamertemplate{blocks}[rounded][shadow=true] 
-\usetheme{Warsaw} 
+\pgfdeclareimage[height=0.45cm]{logos/logo.pdf}{logos/logo.pdf}
+\logo{\pgfuseimage{logos/logo.pdf}}
+\setbeamertemplate{items}[ball]
+\setbeamertemplate{blocks}[rounded][shadow=true]
+\usetheme{Warsaw}
 
 \setbeamercolor{title}{fg=white}
 \setbeamercolor{frametitle}{fg=white}
@@ -129,10 +129,9 @@ morekeywords={xmlns,version,type}
   \vskip0pt%
 }
 
-\usebackgroundtemplate{\centering\includegraphics[width=\paperwidth]{logos/mycompany-logo-watermark.png}} 
 
 \begin{frame}
-  \titlepage 
+  \titlepage
 \end{frame}
 
 \begin{frame}{\contentsname}
@@ -150,7 +149,7 @@ morekeywords={xmlns,version,type}
 {
   \begin{frame}<beamer>
     \frametitle{Contents}
-    \scriptsize\tableofcontents[currentsection,hideothersubsection]
+    \scriptsize\tableofcontents[currentsection,hideothersubsections]
   \end{frame}
 }
 
